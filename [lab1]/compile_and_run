@@ -1,0 +1,15 @@
+#!/bin/bash
+
+for i in "$@"
+do
+case $i in
+  *.java)
+  source compile_and_run_java >&1
+  shift
+  ;;
+  *.c)
+  source compile_and_run_c >&1
+  shift
+  ;;
+esac
+done
