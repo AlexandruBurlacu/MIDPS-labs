@@ -1,0 +1,3 @@
+javac hello.java
+java HelloWorld
+rm *.class
