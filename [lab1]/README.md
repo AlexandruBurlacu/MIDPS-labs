@@ -1,6 +1,6 @@
-# VCS and working with CLIs
+VCS and working with CLIs
 
-## Intro
+Intro
 For this laboratory work we will do the following:
 - Connect to it via ssh to a remote server, namely to a Hadoop cluster provided by IBM
 - Generate an ssh public key and add it to the GitHub project
@@ -21,8 +21,8 @@ Here everything is pretty simple: first we need an account on my.imdemocloud.com
 To make it less geeky, it's equivalent to `.then` for JavaScript Promises.
 
 ## Act 2: The mighty Git
-First of all we have to install git `sudo apt-get install git`
-Configure global user name `git config --global user.name "Alex"`
+First of all, we have to install git `sudo apt-get install git`
+Configure global username `git config --global user.name "Alex"`
 Configure global user email `git config --global user.email "alexburlacu96@gmail.com"`
 To initialize a directory you must run `git init`.
 Or you can clone an existing one `git clone <git@github.com:AlexandruBurlacu/MIDPS-labs.git>`, for example.
@@ -37,19 +37,19 @@ To switch between branches run `git checkout <branch_name>`
 To rollback a commit we have several solutions:
 - `git checkout <commit SHA1>`
 - `git reset HEAD` if you don't want the changes to be purged from the branch
-- `gir reset --hard HEAD` if you DO want commited changes to be purged
+- `git reset --hard HEAD` if you DO want committed changes to be purged
 - `git revert` rollbacks by 1 commit
 
-Also there's `git rebase <branch_name>` which in some sense places one branch atop another, this way preserving commit history of both. ![](./res/screen_6.png)
+Also, there's `git rebase <branch_name>` which in some sense places one branch atop another, this way preserving commit history of both. ![](./res/screen_6.png)
 
-And finally, `git merge`, the cause of so many memes, it is actually a way to join branches, for example to join a new module which offers some special functionality, and the master branch.
+And finally, `git merge`, the cause of so many memes, it is actually a way to join branches, for example, to join a new module which offers some special functionality, and the master branch.
 
 
 ## Act 3: Running the app remotely
 
-For this laboratory work we will write, compile and run a ~~MapReduce job~~ some Hello World programs on a Hadoop cluster with 32 physical cores and 256 GB of RAM. ~~Sounds good, doesn't it?~~ I know, it sounds incredibly awful, I will explain during the next laboratory work how such thing happend.
+For this laboratory work, we will write, compile and run a ~~MapReduce job~~ some Hello World programs on a Hadoop cluster with 32 physical cores and 256 GB of RAM. ~~Sounds good, doesn't it?~~ I know, it sounds incredibly awful, I will explain during the next laboratory work how such thing happened.
 
-So, we created some bash scripts that firs compile, then run the hello world programs written in C and Java, and then these scripts purge unwanted files like `.class` or executables.
+So, we created some bash scripts that first compile, then run the hello world programs written in C and Java, and then these scripts purge unwanted files like `.class` or executables.
 
 Also, we have written a small bash script that given the file name will run the appropriate script to compile and run it.
 The code:
