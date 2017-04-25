@@ -1,0 +1,18 @@
+name:           HCalculator
+version:        0.1
+cabal-version:  >= 1.2
+build-type:     Simple
+author:         Alexandru Varacuta
+license:        MIT
+license-file:   LICENSE
+maintainer:     alexandru.varacuta@faf.utm.md
+synopsis:       IDE Laboratory work #2
+description:
+  Simple calculator with view and logic separated,
+  written in Haskell language
+
+executable HCalculator
+  hs-source-dirs:  src
+  main-is:         Main.hs
+  build-depends:   base >= 4, gtk3, gtk2hs-buildtools, transformers, glib
+  ghc-options:     -Wall -fno-warn-unused-do-bind
