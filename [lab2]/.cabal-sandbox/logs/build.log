@@ -1,0 +1,246 @@
+
+package: cairo-0.13.3.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: cairo_svg cairo_ps cairo_pdf
+dependencies: utf8-string-1.0.1.1 text-1.2.2.0 mtl-2.2.1
+              bytestring-0.10.6.0 base-4.8.2.0 array-0.5.1.0
+install-outcome: ConfigureFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: gio-0.13.3.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: mtl-2.2.1 glib-0.13.4.1 containers-0.5.6.2
+              bytestring-0.10.6.0 base-4.8.2.0 array-0.5.1.0
+install-outcome: DependencyFailed glib-0.13.4.1
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: glib-0.13.4.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: closure_signals
+dependencies: utf8-string-1.0.1.1 text-1.2.2.0 containers-0.5.6.2
+              bytestring-0.10.6.0 base-4.8.2.0
+install-outcome: ConfigureFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: gtk-0.14.6
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: -have-quartz-gtk have-gio fmode-binary deprecated
+dependencies: text-1.2.2.0 pango-0.13.3.1 mtl-2.2.1 glib-0.13.4.1
+              gio-0.13.3.1 containers-0.5.6.2 cairo-0.13.3.1 bytestring-0.10.6.0
+              base-4.8.2.0 array-0.5.1.0
+install-outcome: DependencyFailed glib-0.13.4.1
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: pango-0.13.3.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: new-exception
+dependencies: text-1.2.2.0 process-1.2.3.0 pretty-1.1.2.0 mtl-2.2.1
+              glib-0.13.4.1 directory-1.2.2.0 containers-0.5.6.2 cairo-0.13.3.1
+              base-4.8.2.0 array-0.5.1.0
+install-outcome: DependencyFailed glib-0.13.4.1
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: utf8-string-1.0.1.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: bytestring-0.10.6.0 base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: cairo-0.13.3.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: cairo_svg cairo_ps cairo_pdf
+dependencies: utf8-string-1.0.1.1 text-1.2.2.0 mtl-2.2.1
+              bytestring-0.10.6.0 base-4.8.2.0 array-0.5.1.0
+install-outcome: ConfigureFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: gio-0.13.3.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: mtl-2.2.1 glib-0.13.4.1 containers-0.5.6.2
+              bytestring-0.10.6.0 base-4.8.2.0 array-0.5.1.0
+install-outcome: DependencyFailed glib-0.13.4.1
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: glib-0.13.4.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: closure_signals
+dependencies: utf8-string-1.0.1.1 text-1.2.2.0 containers-0.5.6.2
+              bytestring-0.10.6.0 base-4.8.2.0
+install-outcome: ConfigureFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: gtk3-0.14.6
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: have-gio fmode-binary -build-demos
+dependencies: transformers-0.4.2.0 time-1.5.0.1 text-1.2.2.0
+              pango-0.13.3.1 mtl-2.2.1 glib-0.13.4.1 gio-0.13.3.1
+              containers-0.5.6.2 cairo-0.13.3.1 bytestring-0.10.6.0 base-4.8.2.0
+              array-0.5.1.0
+install-outcome: DependencyFailed glib-0.13.4.1
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: pango-0.13.3.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: new-exception
+dependencies: text-1.2.2.0 process-1.2.3.0 pretty-1.1.2.0 mtl-2.2.1
+              glib-0.13.4.1 directory-1.2.2.0 containers-0.5.6.2 cairo-0.13.3.1
+              base-4.8.2.0 array-0.5.1.0
+install-outcome: DependencyFailed glib-0.13.4.1
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: glib-0.13.4.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: closure_signals
+dependencies: utf8-string-1.0.1.1 text-1.2.2.0 containers-0.5.6.2
+              bytestring-0.10.6.0 base-4.8.2.0
+install-outcome: ConfigureFailed
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: Cabal-1.24.2.0
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: -bundled-binary-generic
+dependencies: unix-2.7.1.0 time-1.5.0.1 process-1.2.3.0
+              pretty-1.1.2.0 filepath-1.4.0.0 directory-1.2.2.0 deepseq-1.4.1.1
+              containers-0.5.6.2 bytestring-0.10.6.0 binary-0.7.5.0 base-4.8.2.0
+              array-0.5.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: gtk2hs-buildtools-0.13.2.2
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: closuresignals
+dependencies: random-1.1 process-1.2.3.0 pretty-1.1.2.0
+              hashtables-1.2.1.1 filepath-1.4.0.0 directory-1.2.2.0
+              containers-0.5.6.2 base-4.8.2.0 array-0.5.1.0 Cabal-1.24.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: hashtables-1.2.1.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: unsafe-tricks -sse42 -portable -debug -bounds-checking
+dependencies: vector-0.11.0.0 primitive-0.6.1.0 hashable-1.2.3.3
+              ghc-prim-0.4.0.0 base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: cairo-0.13.3.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: cairo_svg cairo_ps cairo_pdf
+dependencies: utf8-string-1.0.1.1 text-1.2.2.0 mtl-2.2.1
+              bytestring-0.10.6.0 base-4.8.2.0 array-0.5.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: gio-0.13.3.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: mtl-2.2.1 glib-0.13.4.1 containers-0.5.6.2
+              bytestring-0.10.6.0 base-4.8.2.0 array-0.5.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: glib-0.13.4.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: closure_signals
+dependencies: utf8-string-1.0.1.1 text-1.2.2.0 containers-0.5.6.2
+              bytestring-0.10.6.0 base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: gtk3-0.14.6
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: have-gio fmode-binary -build-demos
+dependencies: transformers-0.4.2.0 time-1.5.0.1 text-1.2.2.0
+              pango-0.13.3.1 mtl-2.2.1 glib-0.13.4.1 gio-0.13.3.1
+              containers-0.5.6.2 cairo-0.13.3.1 bytestring-0.10.6.0 base-4.8.2.0
+              array-0.5.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: pango-0.13.3.1
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+flags: new-exception
+dependencies: text-1.2.2.0 process-1.2.3.0 pretty-1.1.2.0 mtl-2.2.1
+              glib-0.13.4.1 directory-1.2.2.0 containers-0.5.6.2 cairo-0.13.3.1
+              base-4.8.2.0 array-0.5.1.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
