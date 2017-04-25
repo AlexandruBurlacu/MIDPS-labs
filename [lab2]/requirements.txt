@@ -1,0 +1,7 @@
+# via sudo apt-get install
+libgtk3-dev
+build-essential
+libgl1-mesa-dev
+haskell-platform
+# via cabal install
+gtk3, gtk2hs-buildtools, transformers, glib
