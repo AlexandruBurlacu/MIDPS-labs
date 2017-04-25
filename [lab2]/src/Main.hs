@@ -25,5 +25,13 @@ main = do
                 entryXalign   := 1, -- makes contents right-aligned
                 entryText     := "0" ]
 
+  grid <- Grid.gridNew
+  Grid.gridSetRowHomogeneous grid True
+
+  window `on` deleteEvent $ do
+  -- handler to run on window destruction
+    liftIO mainQuit
+    return False
+
   widgetShowAll window
   mainGUI
