@@ -10,6 +10,29 @@ import qualified Graphics.UI.Gtk.Layout.Grid as Grid
 -- 'Business' Logic Module
 import Logic
 
+updateDisplay :: Entry -> Value -> IO ()
+-- Make calculator's display show given 'Value'.
+updateDisplay display value =
+  set display [ entryText := renderValue value ]
+
+
+mkButton
+  :: IORef Value       -- ^ 'IORef' to calculator state
+  -> Entry             -- ^ Our display to update
+  -> String            -- ^ Button label
+  -> (Value -> Value)  -- ^ How this button affects calculator state
+  -> IO Button         -- ^ Resulting button object
+-- Create a button and attach handler to it that mutates calculator's
+-- state with given function.
+mkButton st display label mutateState = do
+  btn <- buttonNew
+  set btn [ buttonLabel := label ]
+  btn `on` buttonActivated $ do
+    value <- atomicModifyIORef st $ \x -> let r = mutateState x in (r, r)
+    updateDisplay display value
+  return btn
+
+
 main :: IO ()
 main = do
   void initGUI
