@@ -1,0 +1,14 @@
+#!bin/bash
+sudo apt-get install libgtk3-dev, build-essential, libgl1-mesa-dev
+# the ones for graphics
+
+sudo apt-get install haskell-platform
+# this for the Haskell platform (I know, it was obvious from the name)
+# it will install the ghc Haskell compiler,
+# the Cabal package manager (think of Python's pip) and some other tools
+
+# now that the above dependencies are installed, run
+cabal update
+cabal install gtk2hs-buildtools
+cabal install gtk3
+# note that the order does matter, and it will take some time, btw.
