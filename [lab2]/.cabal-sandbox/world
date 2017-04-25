@@ -1,4 +1,0 @@
-gtk2hs-buildtools -any
-glib -any
-gtk3 -any
-gtk -any
