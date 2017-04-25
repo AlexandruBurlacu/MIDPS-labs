@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 sudo apt-get install libgtk3-dev, build-essential, libgl1-mesa-dev
 # the ones for graphics
 
