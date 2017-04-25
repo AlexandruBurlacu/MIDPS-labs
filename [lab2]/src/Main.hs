@@ -12,5 +12,18 @@ import Logic
 
 main :: IO ()
 main = do
-  putStrLn "Let the IDE Lab #2 begin!"
-  putStrLn "It's evolving :D"
+  void initGUI
+  -- Main window
+  window <- windowNew
+  set window [ windowTitle         := "Calculator",
+               windowDefaultWidth  := 230,
+               windowDefaultHeight := 250,
+               windowResizable     := True ]
+  -- Display for numbers
+  display <- entryNew
+  set display [ entryEditable := False,
+                entryXalign   := 1, -- makes contents right-aligned
+                entryText     := "0" ]
+
+  widgetShowAll window
+  mainGUI
