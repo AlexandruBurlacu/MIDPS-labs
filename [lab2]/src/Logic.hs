@@ -18,3 +18,13 @@ data Action
   | Power          String
   | Invert         String
 
+getSndArg :: Action -> String
+-- Get second argument from 'Action'.
+getSndArg (Addition       x) = x
+getSndArg (Subtraction    x) = x
+getSndArg (Multiplication x) = x
+getSndArg (Division       x) = x
+getSndArg (SquareRoot     x) = x
+getSndArg (Power          x) = x
+getSndArg (Invert         x) = x
+
